@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import "./header.css";
 
-import { AiOutlineFilePdf } from "react-icons/ai";
+import { BsFiletypePdf } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { VscGithubAlt } from "react-icons/vsc";
-import { BsFiletypePdf } from "react-icons/bs";
 
 import ME from "../../assets/20.svg";
 import RE from "../../assets/21.svg";
