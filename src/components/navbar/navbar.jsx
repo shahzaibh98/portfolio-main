@@ -1,12 +1,9 @@
 import React from "react";
-import "./navbar.css";
+import { AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
+import { BsPhone } from "react-icons/bs";
 import { FaUniversity } from "react-icons/fa";
-import { FiPhoneCall } from "react-icons/fi";
-import {
-  AiFillHome,
-  AiOutlineUser,
-  AiOutlineFundProjectionScreen,
-} from "react-icons/ai";
+import { HiOutlineHome } from "react-icons/hi";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
@@ -15,7 +12,7 @@ const Navbar = () => {
         <ul>
           <li>
             <a href="#header">
-              <AiFillHome />
+              <HiOutlineHome />
             </a>
           </li>
           <li>
@@ -35,7 +32,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#contact">
-              <FiPhoneCall />
+              <BsPhone />
             </a>
           </li>
         </ul>
