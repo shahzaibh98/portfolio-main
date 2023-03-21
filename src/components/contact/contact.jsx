@@ -1,12 +1,11 @@
 import React from "react";
 import "./contact.css";
 
-import { MdSettingsPower } from "react-icons/md";
-import { LinkedinLogo, GitlabLogo, InstagramLogo } from "phosphor-react";
+import { GitlabLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 
 import { motion } from "framer-motion";
-import { useScroll } from "../anima/useScroll";
 import { contact } from "../anima/animation";
+import { useScroll } from "../anima/useScroll";
 
 const Contact = ({ changeTheme, currentTheme }) => {
   const [element, controls] = useScroll();

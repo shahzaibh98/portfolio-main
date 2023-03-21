@@ -89,7 +89,7 @@ const Header = () => {
           <h2 className="title tit">Hi, i'm Shahzaib Hassan</h2>
           <h2 className="title sub">Software Engineer</h2>
           <h4 className="description">
-            Deep level experience in web desing and development knowledge.
+            Deep level experience in web designing & development knowledge.
           </h4>
         </div>
 
