@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 
-import {
-  Alien, CircleWavyCheck, Cube, DotsNine, Eye, FigmaLogo, FileCss,
-  FileHtml, FileJs, FileJsx,
-  FileTs, IdentificationBadge, Palette, Pen
-} from "phosphor-react";
+import { CircleWavyCheck, DotsNine, IdentificationBadge } from "phosphor-react";
 
-import { useEffect } from "react";
+import { AiOutlineAndroid } from "react-icons/ai";
+import { IoFingerPrintOutline } from "react-icons/io5";
+import {
+  SiFirebase,
+  SiGithub,
+  SiIos,
+  SiNestjs,
+  SiNodedotjs,
+  SiReact,
+  SiPersonio,
+} from "react-icons/si";
+
+import { TbBrandJavascript } from "react-icons/tb";
+import { VscAzure } from "react-icons/vsc";
+
 import scrollreveal from "scrollreveal";
 
 const About = () => {
@@ -46,18 +56,20 @@ const About = () => {
         <div className="all_about_content">
           <div className="about_child design">
             <h2 className="about_content_title">
-              Design{" "}
+              Web Development{" "}
               <i className="aicon">
-                <FigmaLogo size={32} /> <Pen size={32} /> <Palette size={32} />{" "}
-                <Cube size={32} /> <Eye size={32} />
+                <SiReact size={32} /> <SiNodedotjs size={32} />{" "}
+                <SiNestjs size={32} /> <SiGithub size={32} />{" "}
+                <VscAzure size={32} />
               </i>
             </h2>
             <p className="about_content_description">
-              I’m probably not the typical designer positioned behind an
-              illiustrator artboard adjusting pixels, but i design, immersed in
-              stylesheet tweaking font size and conteplating layouts is where
-              you’ll find me. I’m committed to creating fluent user experiences
-              while staying fashionable.
+              I am a web developer experienced in JavaScript and TypeScript,
+              with expertise in React and Nest JS. I have built various websites
+              and applications using these technologies, showcasing my skills in
+              state management, component architecture, data fetching, API
+              development, database integration, server-side rendering,
+              accessibility, performance optimization, and responsive design.
             </p>
           </div>
           <div className="about_child DotElement">
@@ -65,33 +77,42 @@ const About = () => {
           </div>
           <div className="about_child engineering">
             <h2 className="about_content_title">
-              Engineering{" "}
+              Mobile App{" "}
               <i className="aicon">
-                <FileJsx size={32} /> <FileTs size={32} /> <FileJs size={32} />{" "}
-                <FileCss size={32} /> <FileHtml size={32} />
+                <SiReact size={32} /> <AiOutlineAndroid size={32} />{" "}
+                <SiIos size={32} /> <SiFirebase size={32} />{" "}
+                <TbBrandJavascript size={32} />
               </i>
             </h2>
             <p className="about_content_description">
-              I create Javascript applications and websites, maybe also mobile
-              applications, as coding tools I prefer to use Visual Code and
-              various tools like spline/teta and libraries like gasp/motion
-              frame and ect.
+              I am a skilled mobile application developer with extensive
+              experience using React Native to build responsive, high-quality
+              applications for iOS and Android devices. My expertise includes
+              user interface design, application architecture, data management,
+              and quality assurance testing. I am dedicated to delivering
+              exceptional mobile experiences that meet user expectations, and am
+              always eager to explore new technologies and techniques in this
+              exciting field.
             </p>
           </div>
           <div className="about_child personalty">
             <h2 className="about_content_title">
-              Personalty{" "}
+              Personality{" "}
               <i className="aicon">
-                <CircleWavyCheck size={32} /> <Alien size={32} />{" "}
+                <SiPersonio size={32} /> <CircleWavyCheck size={32} />{" "}
+                <IoFingerPrintOutline size={32} />{" "}
                 <IdentificationBadge size={32} />
               </i>
             </h2>
             <p className="about_content_description">
-              If you look at my personalty, I am a person who likes everything
-              to be planned, I don't like to leave unfinished work. In my spare
-              time, I like to play video games or learn new things related to
-              web development. Also i like to play with cats and love them so
-              much.
+              As a web developer, I approach my work with a keen attention to
+              detail and a passion for planning and organization. I take pride
+              in completing projects thoroughly and ensuring that every task is
+              seen through to the end. In my spare time, I enjoy spending time
+              with friends and exploring new places, as well as staying up to
+              date with the latest trends and technologies in web development. I
+              also have a passion for cricket, and enjoy playing the sport
+              whenever I have the chance.
             </p>
           </div>
         </div>
