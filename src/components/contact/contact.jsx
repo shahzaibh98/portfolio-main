@@ -1,9 +1,12 @@
 import React from "react";
 import "./contact.css";
 
-import { GitlabLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { VscGithubAlt } from "react-icons/vsc";
+import resumePdf from "../../assets/Shahzaib Hassan - Resume.pdf";
 
 import { motion } from "framer-motion";
+import { BsFiletypePdf } from "react-icons/bs";
 import { contact } from "../anima/animation";
 import { useScroll } from "../anima/useScroll";
 
@@ -34,7 +37,7 @@ const Contact = ({ changeTheme, currentTheme }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedinLogo size={80} className="con_so_icon" />
+                  <SlSocialLinkedin size={80} className="con_so_icon" />
                 </a>
               </p>
             </div>
@@ -54,7 +57,7 @@ const Contact = ({ changeTheme, currentTheme }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GitlabLogo size={80} className="con_so_icon" />
+                  <VscGithubAlt size={80} className="con_so_icon" />
                 </a>
               </p>
             </div>
@@ -64,17 +67,13 @@ const Contact = ({ changeTheme, currentTheme }) => {
         <div className="con_card">
           <div className="con_content">
             <div className="front">
-              <h3 className="con_title">Instagram</h3>
+              <h3 className="con_title">Resume</h3>
               <p className="con_subtitle">Hover me !</p>
             </div>
             <div className="back">
               <p className="con_description">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InstagramLogo size={80} className="con_so_icon" />
+                <a href={resumePdf} rel="noopener noreferrer" download>
+                  <BsFiletypePdf size={80} className="con_so_icon" />
                 </a>
               </p>
             </div>
