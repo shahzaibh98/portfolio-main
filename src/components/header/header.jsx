@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import "./header.css";
 
-import { AiOutlineFilePdf, AiOutlineGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineFilePdf } from "react-icons/ai";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { VscGithubAlt } from "react-icons/vsc";
+import { BsFiletypePdf } from "react-icons/bs";
 
 import ME from "../../assets/20.svg";
 import RE from "../../assets/21.svg";
@@ -100,7 +102,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="icon"
           >
-            <FaLinkedinIn />
+            <SlSocialLinkedin />
           </a>
           <a
             href="https://github.com/shahzaib1010hassan"
@@ -108,11 +110,11 @@ const Header = () => {
             rel="noopener noreferrer"
             className="icon"
           >
-            <AiOutlineGithub />
+            <VscGithubAlt />
           </a>
 
           <a href={resumePdf} className="icon" download>
-            <AiOutlineFilePdf />
+            <BsFiletypePdf />
           </a>
         </div>
 
