@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./working.css";
 
-import { db } from "../../firebase";
 import { collection, getDocs } from "firebase/firestore";
-import { query, orderBy } from "firebase/firestore";
+import { db } from "../../firebase";
 
-import { GoTools } from "react-icons/go";
-import { FaLink } from "react-icons/fa";
 import scrollreveal from "scrollreveal";
-import { motion } from "framer-motion";
-import { card } from "../anima/animation";
 import { useScroll } from "../anima/useScroll";
 
 const Working = () => {
@@ -24,8 +19,6 @@ const Working = () => {
     };
     getProjects();
   }, []);
-
-  console.log("Projects :=>", projects);
 
   useEffect(() => {
     const working = scrollreveal({
