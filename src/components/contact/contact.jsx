@@ -33,7 +33,7 @@ const Contact = ({ changeTheme, currentTheme }) => {
             <div className="back">
               <p className="con_description">
                 <a
-                  href="https://www.linkedin.com/in/erkan-uz-lil/"
+                  href="https://www.linkedin.com/in/shahzaib-hassan-929207180/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -53,7 +53,7 @@ const Contact = ({ changeTheme, currentTheme }) => {
             <div className="back">
               <p className="con_description">
                 <a
-                  href="https://github.com/erkanuz"
+                  href="https://github.com/shahzaib1010hassan"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

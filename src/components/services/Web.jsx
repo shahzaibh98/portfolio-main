@@ -10,7 +10,7 @@ const Web = ({ open, onClose }) => {
           <AiFillCloseCircle />
         </i>
 
-        <h3 className="modal_title">Web Designer</h3>
+        <h3 className="modal_title">Mobile App Developer</h3>
         <p className="modal_description">
           Providing quality work to clients and companies.
         </p>
@@ -21,7 +21,7 @@ const Web = ({ open, onClose }) => {
               <AiFillCheckCircle />
             </i>
             <p className="modal_info">
-              Creation, design and maintenance of websites
+              Creation, design and maintenance of Mobile Apps
             </p>
           </li>
 
@@ -30,7 +30,7 @@ const Web = ({ open, onClose }) => {
               <AiFillCheckCircle />
             </i>
             <p className="modal_info">
-              Realizing the client's dream web site design
+              Realizing the client's dream app site design
             </p>
           </li>
 

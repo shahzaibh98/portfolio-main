@@ -28,7 +28,7 @@ const Services = () => {
       <div className="services_container container grid">
         <div className="services_card ser1">
           <p>
-            <span>PRODUCT DESIGNER</span>
+            <span>Web Developer</span>
           </p>
           <p>
             <span>TRY TO HOVER ME !</span>
@@ -43,7 +43,7 @@ const Services = () => {
 
         <div className="services_card ser2">
           <p>
-            <span>WEB DEVELOPMENT</span>
+            <span>Mobile App Developer</span>
           </p>
           <p>
             <span>TRY TO HOVER ME !</span>

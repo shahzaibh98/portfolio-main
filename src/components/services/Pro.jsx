@@ -10,7 +10,7 @@ const Pro = ({ open, onClose }) => {
           <AiFillCloseCircle />
         </i>
 
-        <h3 className="modal_title">Product Designer</h3>
+        <h3 className="modal_title">Web Developer</h3>
         <p className="modal_description">
           Providing quality work to clients and companies.
         </p>
@@ -21,8 +21,9 @@ const Pro = ({ open, onClose }) => {
               <AiFillCheckCircle />
             </i>
             <p className="modal_info">
-              Quality planning, designing the most suitable and long-lasting
-              product for a given business
+              As a web developer, quality planning and designing a user-centric,
+              scalable, and accessible product is essential for meeting the
+              needs of a given business.
             </p>
           </li>
 
@@ -40,7 +41,7 @@ const Pro = ({ open, onClose }) => {
               <AiFillCheckCircle />
             </i>
             <p className="modal_info">
-              Designing the most suitable design for the user and the company
+              Developing the most suitable product for the user and the company
             </p>
           </li>
         </ul>
