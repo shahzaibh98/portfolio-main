@@ -13,8 +13,7 @@ const Working = () => {
   const projCollectionRef = collection(db, "jobDetails");
   useEffect(() => {
     const getProjects = async () => {
-      const q = projCollectionRef;
-      const data = await getDocs(q);
+      const data = await getDocs(projCollectionRef);
       setProjects(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getProjects();
@@ -63,33 +62,41 @@ const Working = () => {
       </h2>
       <div class="ag-format-container">
         <div class="ag-courses_box">
-          {projects.map((x) => {
-            return (
-              <div class="ag-courses_item">
-                <div class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
+          <motion.div
+            className="pro_container grid"
+            ref={element}
+            variants={card}
+            animate={controls}
+            transition={{ delay: 0.6, duration: 0.9, type: "tween" }}
+          >
+            {projects.map((x) => {
+              return (
+                <div class="ag-courses_item">
+                  <div class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
 
-                  <div class="ag-courses-item_title">{x.jobTitle}</div>
+                    <div class="ag-courses-item_title">{x.jobTitle}</div>
 
-                  <div class="ag-courses-item_date-box">
-                    <span class=".ag-courses-item_company_name">
-                      {x.companyName}
-                    </span>
-                    <span class="ag-courses-item_date">
-                      {" ( " + x.jobTimePeriod + " )"}
-                    </span>
+                    <div class="ag-courses-item_date-box">
+                      <span class=".ag-courses-item_company_name">
+                        {x.companyName}
+                      </span>
+                      <span class="ag-courses-item_date">
+                        {" ( " + x.jobTimePeriod + " )"}
+                      </span>
+                    </div>
+                    {x.description.map((point) => {
+                      return (
+                        <p class="ag-courses-item_description">
+                          <em>{point}</em>
+                        </p>
+                      );
+                    })}
                   </div>
-                  {x.description.map((point) => {
-                    return (
-                      <p class="ag-courses-item_description">
-                        <em>{point}</em>
-                      </p>
-                    );
-                  })}
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </motion.div>
         </div>
       </div>
     </section>
