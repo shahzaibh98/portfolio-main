@@ -12,12 +12,11 @@ import { motion } from "framer-motion";
 import { card } from "../anima/animation";
 import { useScroll } from "../anima/useScroll";
 
-console.log("Database", db);
-
 const Projects = () => {
   const [element, controls] = useScroll();
   const [projects, setProjects] = useState([]);
   const projCollectionRef = collection(db, "Projects");
+
   useEffect(() => {
     const getProjects = async () => {
       const q = query(projCollectionRef, orderBy("category", "desc"));
@@ -27,7 +26,7 @@ const Projects = () => {
     getProjects();
     //eslint-disable-next-line
   }, []);
-  console.log("Projects", projects);
+
   return (
     <section id="projects" className="projects section">
       <h2 className="proj_title">Recent Works</h2>

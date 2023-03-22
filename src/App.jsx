@@ -12,8 +12,8 @@ import Header from "./components/header/header";
 import Navbar from "./components/navbar/navbar";
 import Projects from "./components/projects/projects";
 import Services from "./components/services/services";
+import Working from "./components/working/working";
 import "./styles.css";
-
 export const App = () => {
   const [theme, setTheme] = useState("dark");
   const changeTheme = () => {
@@ -42,6 +42,7 @@ export const App = () => {
       <Navbar />
       <About />
       <Education />
+      <Working />
       <Services />
       <Projects />
       <Contact changeTheme={changeTheme} currentTheme={theme} />

@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { BsPhone } from "react-icons/bs";
 import { FaUniversity } from "react-icons/fa";
-import { HiOutlineHome } from "react-icons/hi";
+import { HiOutlineHome, HiOutlineOfficeBuilding } from "react-icons/hi";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -23,6 +23,11 @@ const Navbar = () => {
           <li>
             <a href="#education">
               <FaUniversity />
+            </a>
+          </li>
+          <li>
+            <a href="#working">
+              <HiOutlineOfficeBuilding />
             </a>
           </li>
           <li>
