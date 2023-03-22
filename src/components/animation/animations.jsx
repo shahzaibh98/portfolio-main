@@ -3,19 +3,13 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const BackgroundAnimations = ({ themeMode }) => {
-  const particlesInit = useCallback(
-    async (engine) => {
-      await loadFull(engine);
-    },
-    [themeMode]
-  );
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
 
-  const particlesLoaded = useCallback(
-    async (container) => {
-      await console.log(container);
-    },
-    [themeMode]
-  );
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
 
   const colorObject =
     themeMode !== "dark"
