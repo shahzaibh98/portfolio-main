@@ -4,12 +4,8 @@ import "./working.css";
 import { collection, getDocs } from "firebase/firestore";
 import scrollreveal from "scrollreveal";
 import { db } from "../../firebase";
-import { card } from "../anima/animation";
-import { useScroll } from "../anima/useScroll";
-import { motion } from "framer-motion";
 
 const Working = () => {
-  const [element, controls] = useScroll();
   const [projects, setProjects] = useState([]);
   const projCollectionRef = collection(db, "jobDetails");
 
@@ -64,41 +60,33 @@ const Working = () => {
       </h2>
       <div class="ag-format-container">
         <div class="ag-courses_box">
-          <motion.div
-            className="pro_container grid"
-            ref={element}
-            variants={card}
-            animate={controls}
-            transition={{ delay: 0.6, duration: 0.9, type: "tween" }}
-          >
-            {projects.map((x) => {
-              return (
-                <div class="ag-courses_item">
-                  <div class="ag-courses-item_link">
-                    <div class="ag-courses-item_bg"></div>
+          {projects.map((x) => {
+            return (
+              <div class="ag-courses_item">
+                <div class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
 
-                    <div class="ag-courses-item_title">{x.jobTitle}</div>
+                  <div class="ag-courses-item_title">{x.jobTitle}</div>
 
-                    <div class="ag-courses-item_date-box">
-                      <span class=".ag-courses-item_company_name">
-                        {x.companyName}
-                      </span>
-                      <span class="ag-courses-item_date">
-                        {" ( " + x.jobTimePeriod + " )"}
-                      </span>
-                    </div>
-                    {x.description.map((point) => {
-                      return (
-                        <p class="ag-courses-item_description">
-                          <em>{point}</em>
-                        </p>
-                      );
-                    })}
+                  <div class="ag-courses-item_date-box">
+                    <span class=".ag-courses-item_company_name">
+                      {x.companyName}
+                    </span>
+                    <span class="ag-courses-item_date">
+                      {" ( " + x.jobTimePeriod + " )"}
+                    </span>
                   </div>
+                  {x.description.map((point) => {
+                    return (
+                      <p class="ag-courses-item_description">
+                        <em>{point}</em>
+                      </p>
+                    );
+                  })}
                 </div>
-              );
-            })}
-          </motion.div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
