@@ -2,22 +2,24 @@ import React, { useEffect, useState } from "react";
 import "./working.css";
 
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebase";
-
 import scrollreveal from "scrollreveal";
+import { db } from "../../firebase";
+import { card } from "../anima/animation";
 import { useScroll } from "../anima/useScroll";
+import { motion } from "framer-motion";
 
 const Working = () => {
   const [element, controls] = useScroll();
   const [projects, setProjects] = useState([]);
   const projCollectionRef = collection(db, "jobDetails");
+
   useEffect(() => {
     const getProjects = async () => {
       const data = await getDocs(projCollectionRef);
       setProjects(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getProjects();
-  }, []);
+  }, [projCollectionRef]);
 
   useEffect(() => {
     const working = scrollreveal({
