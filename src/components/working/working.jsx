@@ -18,37 +18,37 @@ const Working = () => {
   }, [projCollectionRef]);
 
   useEffect(() => {
-    const working = scrollreveal({
-      origin: "bottom",
-      distance: "50px",
-      duration: 2000,
-      reset: true,
-    });
-    working.reveal(`#working`);
+    // const working = scrollreveal({
+    //   origin: "bottom",
+    //   distance: "50px",
+    //   duration: 2000,
+    //   reset: true,
+    // });
+    // working.reveal(`#working`);
 
-    const education_title = scrollreveal({
-      origin: "right",
-      distance: "50px",
-      duration: 2000,
-      reset: true,
-    });
-    education_title.reveal(`.ag-courses_item`);
+    // const education_title = scrollreveal({
+    //   origin: "right",
+    //   distance: "50px",
+    //   duration: 2000,
+    //   reset: true,
+    // });
+    // education_title.reveal(`.ag-courses_item`);
 
-    const education_subtitle = scrollreveal({
-      origin: "left",
-      distance: "50px",
-      duration: 2000,
-      reset: true,
-    });
-    education_subtitle.reveal(`.ag-courses-item_title`);
+    // const education_subtitle = scrollreveal({
+    //   origin: "left",
+    //   distance: "50px",
+    //   duration: 2000,
+    //   reset: true,
+    // });
+    // education_subtitle.reveal(`.ag-courses-item_title`);
 
-    const edication_calendar = scrollreveal({
-      origin: "right",
-      distance: "50px",
-      duration: 2000,
-      reset: true,
-    });
-    edication_calendar.reveal(`.ag-courses-item_date-box`);
+    // const edication_calendar = scrollreveal({
+    //   origin: "right",
+    //   distance: "50px",
+    //   duration: 2000,
+    //   reset: true,
+    // });
+    // edication_calendar.reveal(`.ag-courses-item_date-box`);
   }, []);
 
   return (
