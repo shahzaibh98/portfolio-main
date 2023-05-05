@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./working.css";
 
 import { collection, getDocs } from "firebase/firestore";
-import scrollreveal from "scrollreveal";
 import { db } from "../../firebase";
 
 const Working = () => {
