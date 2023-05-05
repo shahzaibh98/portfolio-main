@@ -19,7 +19,7 @@ const Projects = () => {
 
   useEffect(() => {
     const getProjects = async () => {
-      const q = query(projCollectionRef, orderBy("category", "desc"));
+      const q = query(projCollectionRef, orderBy("id", "asc"));
       const data = await getDocs(q);
       setProjects(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
